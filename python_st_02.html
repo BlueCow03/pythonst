@@ -244,88 +244,72 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="Python">Hello Python</h1>
-                    <blockquote>
-                      <p>본 강의 자료는 
-                        <a href="https://colab.research.google.com/notebooks/welcome.ipynb?hl=ko" target="_blank">
-                              Google Colab
-                        </a>
-                        를 통해 브라우저 내에서 Python 스크립트를 작성하고 실행하는 것을 가정에서 진행 됩니다.
-                      </p>
-                    </blockquote>
-                    <h2 id="Colab">Colab 소개</h2>
+                    <h1 id="변수">변수</h1>
                     <p>
-                        Colaboratory를 줄여서 Colab이라고 합니다. 학생이든, 데이터 과학자든, AI 연구원이든 Colab으로
-                        업무를 더욱 간편하게 처리할 수 있습니다. 브라우저에서 작성 및 실행함으로 언제 어디서든 코딩을
-                        할 수 있습니다.
-                    </p>
-                    <h2 id="IDLE">IDLE 소개</h2>
-                    <p>
-                        Python IDLE 이란 Integrated Development and Learning Environment의 약자로,
-                        파이썬 1.5.2B1 이후 언어의 디폴트 구현과 함께 묶여온 파이썬을 위한 통합 개발 환경입니다.
-                        python IDLE은 GUI 툴로, 파이썬을 사용하기 쉽게 해줍니다.
-                    </p>
-                    <P>
-                        IDLE(아이들)은 단순한 IDE를 지향하며, 특히 교육 환경에서 초보자에게 적합합니다.
-                    </p>
-                    <P>
-                        1) 구문 강조, 자동 완성, 스마트 들여쓰기 등이 포함된 다중 창 텍스트 편집기<br>
-                        2) 구문 강조된 파이썬 쉘<br>
-                        3) stepping, breakpoint, call stack을 볼 수 있는 통합 디버거
-                    </p>
-                    <P>
-                        위 3개가 주요기능입니다.
-                    </p>
-                    <h2 id="Colab 'Hello Python'">Colab "Hello Python"</h2>
-                    <img src="./pictures/python_st_01/colab_01.jpg" alt="not found" width="auto" height="auto">
-                    <p>
-                        Colaboratory에 접속하면 Colab 시작 페이지가 나오는데 여기서 왼쪽 상단에 보이는 파일을 눌러 
-                        '새 노트'를 눌러 새로운 페이지를 연다.
-                    </p>
-                    <img src="./pictures/python_st_01/colab_02.jpg" alt="not found" width="auto" height="auto">
-                    <p>
-                        그러면 이러한 페이지가 나오는데 여기서 빨간 박스 안에 있는 셀에 print("Hello Python") 을 치고 
-                        왼쪽에 셀 실행 버튼을 누르면 아래와 같은 출력값이 나온다.
+                        이번에는 변수에 대하여 알아보겠습니다. 변수는, 특정 이름에 특정 값을 담을 때 사용합니다.<br>
+                        예를 들어서 우리가 x라는 이름에 1이라는 값을 넣는다고 가정해봅시다.<br>
+                        코드는 이렇게 입력하시면 됩니다.
                         <blockquote>
                             <p>
-                                이때 왼쪽에 셀 실행 버튼을 누르지 않더라도 Shift + Enter를 누르면 버튼을 안누르고도 실행 시킬 수 
-                                있고 새로운 코드를 입력 가능한 셀이 나오게 된다.
+                                꼭 x가 아니여도 자신이 하고 싶은 변수명으로 하셔도 무관합니다!<br>
+                                그리고 꼭 변수가 '=' 기준으로 왼쪽에 있어야 합니다!
                             </p>
-                        </blockquote>
-                    </p><br>
-                    <img src="./pictures/python_st_01/colab_03.jpg" alt="not found" width="auto" height="auto">
-                    <h2 id="IDLE 'Hello Python'">IDLE "Hello Python"</h2>
-                    <p>이번에는 IDLE 설치부터 'Hello Python' 출력까지 해보겠습니다. 
-                        <a href="https://www.python.org/downloads/" target="_blank">
-                              IDLE Python
-                        </a>
-                        에 들어가면 아래와 같은 화면이 뜹니다. 여기서 빨간 박스 안에 있는 버튼을 눌러줍니다.
+                          </blockquote>
                     </p>
-                    <img src="./pictures/python_st_01/idle_01.jpg" alt="not found" width="auto" height="auto">
+                    <img src="./pictures/python_st_02/01.jpg" alt="not found" width="auto" height="auto">
                     <p>
-                        버튼을 눌러 다운로드를 받은 후 
+                        앞으로 우리가 x를 조회하면 x는 1을 가리키게 됩니다. 예를 들어서 우리가 전에 썼던 print()를 
+                        통하여 x값을 출력하도록 해보세요.
                     </p>
-                    <img src="./pictures/python_st_01/idle_02.jpg" alt="not found" width="auto" height="auto">
+                    <img src="./pictures/python_st_02/02.jpg" alt="not found" width="auto" height="auto">
                     <p>
-                        이러한 화면이 뜨는데 밑에 보이는 체크 박스를 모두 체크하시고 'Install Now'를 눌러주세요. 
-                        그러면 설치가 시작됩니다.
+                        이렇게 특정 이름에 특정 값을 설정하는 것을 우리는 선언이라고 합니다. 쉽게 말하면 'x는 1이야'라고 
+                        알려주는 것입니다.<br>
+                        변수는 바뀔 수 있는 값을 말합니다. 한번 값을 선언하고 나서 바꿀 수 있습니다.
                     </p>
-                    <img src="./pictures/python_st_01/idle_03.jpg" alt="not found" width="auto" height="auto">
+                    <img src="./pictures/python_st_02/03.jpg" alt="not found" width="auto" height="auto">
+                    <h2 id="변수명 규칙">변수명 규칙</h2>
                     <p>
-                        설치가 끝났으면 이러한 화면이 뜨는데 'Close'를 눌러 종료해 주시면 됩니다.
+                        변수를 선언할 때에 몇 가지의 주의 사항이 있습니다.<br>
+                        1) 알파벳, 숫자, 언더바(_)로 선언 가능하다.<br>
+                        2) 의미 있는 단어로 표기하는 것이 좋다.<br>
+                        3) 대소문자를 구분하여야 한다.<br>
+                        4) 특별한 의미가 있는 예약어는 사용할 수 없습니다.<br>
                     </p>
-                    <img src="./pictures/python_st_01/idle_04.jpg" alt="not found" width="auto" height="auto">
+                    <h2 id="데이터 타입">데이터 타입</h2>
                     <p>
-                        화면 왼쪽 하단 윈도우 로고 옆에 보이는 돋보기에 IDLE이라고 치시면 이러한 화면이 나오는데, 
-                        실행시켜주시면 됩니다.
+                        Python에서는 테이터는 타입에 따라서 논리형, 수치형, 구조형으로 구분됩니다. 일반적으로는 숫자와 
+                        문자, 그리고 구조에 따른 저장을 위해서 여러가지 구분된 자료형을 제공합니다.<br>
+                        많은 자료형이 있으니, 상황에 따라서 그에 맞는 자료형을 쓰시면 됩니다.<br>
+                        이 강의에서는 숫자, 문자열, 논리형 정도만 간단하게 집고 넘어가겠습니다.
                     </p>
-                    <img src="./pictures/python_st_01/idle_05.jpg" alt="not found" width="auto" height="auto">
+                    <h3 id="숫자">숫자</h3>
                     <p>
-                        실행하시면 이러한 창이 뜨는데 저기에 print("Hello Python") 입력하시고 Enter를 눌러주시면 아래와 같은 결과가 나옵니다.
+                        먼저, 이미 사용해 보았던 숫자는 바로 변수에 대입하시면 됩니다.
                     </p>
-                    <img src="./pictures/python_st_01/idle_06.jpg" alt="not found" width="auto" height="auto">
+                    <img src="./pictures/python_st_02/02.jpg" alt="not found" width="auto" height="auto">
+                    <h3 id="문자열">문자열</h3>
                     <p>
-                        이번 강의는 여기서 마치도록 하겠습니다.
+                        이번엔 문자열을 알아보겠습니다. 문자열은 텍스트 형태의 값을 작은 따옴표 혹은 큰 따옴표로 감싸서 선언합니다. 
+                    </p>
+                    <img src="./pictures/python_st_02/04.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        작은 따움표와 큰 따움표 사용에 있어서 큰 차이는 없습니다. 둘 다 사용하셔도 무관하지만, 하나만 선택하여 
+                        사용하시는 것이 편합니다. 
+                    </p>
+                    <h3 id="논리형">논리형(Boolean)</h3>
+                    <p>
+                        마지막으로 논리형(Boolean)에 대하여 알아보겠습니다. Boolean은 '참' 혹은 '거짓' 두 가지 종류의 값만을 
+                        나타낼 수 있습니다.
+                    </p>
+                    <img src="./pictures/python_st_02/05.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        참은 True, 거짓은 False입니다.<br>
+                        첫 문자는 대문자로 입력하셔야 오류가 안납니다!
+                    </p>
+                    <p>
+                        이번 강의에서는 변수에 대하여 간단하게 알아보았습니다. 데이터 타입은 프로그래밍에서 거의 필수로 쓰이기에 
+                        좀 더 자세히 공부하시는 것도 좋습니다!
                     </p>
                     <script>
                       function attachComments() {
