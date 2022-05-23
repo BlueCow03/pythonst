@@ -244,36 +244,89 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="Python">Python</h1>
+                    <h1 id="Python">Hello Python</h1>
                     <blockquote>
                       <p>본 강의 자료는 
-                        <a href="https://www.youtube.com/watch?v=wb4F1aeZtRA&list=PL7ZVZgsnLwEEdhCYInwxRpj1Rc4EGmCUc" target="_blank">
-                              YouTube 이수안컴퓨터연구소
+                        <a href="https://colab.research.google.com/notebooks/welcome.ipynb?hl=ko" target="_blank">
+                              Google Colab
                         </a>
-                        에서 제공하는 Python 강의를 듣고 정리한 강의 문서입니다.
+                        를 통해 브라우저 내에서 Python 스크립트를 작성하고 실행하는 것을 가정에서 진행 됩니다.
                       </p>
                     </blockquote>
-                    <h2 id="강의-소개">강의 소개</h2>
-                    <p>이 강의에서는 파이썬 기초 지식들을 다뤄보게 됩니다.</p>
-                    <h2 id="강의-대상">강의 대상</h2>
-                    <p>이 강의는 프로그래밍을 한번도 해본적 없는 사람이 들어도 도움이 될 수 있으며, 
-                      파이썬 기초를 이미 배우신 분들도 도움이 될 수 있습니다. 
-                      특히 언어처리, 데이터베이스, 딥러닝 등의 인공지능을 공부하기 전에 
-                      이 튜토리얼을 통하여 파이썬을 한번 공부하고 나면 큰 도움이 될 수 있습니다.</p>
-                    <blockquote>
-                      <p>파이썬을 이미 아신다면 강의 초반부는 살짝 지루 할 수도 있습니다. 
-                        알고 있는 내용은 스킵을 하면서 보셔도 무방합니다 :)</p>
-                    </blockquote>
-                    <h2 id="튜토리얼을-진행하기전에-필요한-것">튜토리얼을 진행하기전에 필요한 것</h2>
-                    <p>튜토리얼을 진행하기전에 꼭 필요한 것은 바로, 개발 공부에 대한 관심입니다. 
-                      그리고, 왜 개발을 배워야 하는지에 대한 동기입니다. 
-                      단순히 "프로그래밍을 배우고싶다" 또는 "나도 프로그래머가 되고 싶다"라는 생각은 
-                      개발 공부를 할 때 있어서 작심삼일이 되기 쉬운 마인드입니다.</p>
-                    <p>그 대신에, 나는 "프로그래밍을 배워서 어떤 프로젝트를 만들어보고 싶다" 와 
-                      같은 확실한 목표를 세우고 개발 공부를 진행하시기를 바랍니다. 
-                      그 어떠한 목표가 거창한것이 아니여도 좋습니다. 진짜 간단한 프로젝트라 하더라도, 
-                      만들고 싶은 것을 목표로 삼고 개발 공부를 해보세요.</p>
-                    <p>추가적으로, 개발 공부를 하게 될 때 있어서 필요한 도구들은 앞으로 하나하나 설치 할 것입니다.</p>
+                    <h2 id="Colab">Colab 소개</h2>
+                    <p>
+                        Colaboratory를 줄여서 Colab이라고 합니다. 학생이든, 데이터 과학자든, AI 연구원이든 Colab으로
+                        업무를 더욱 간편하게 처리할 수 있습니다. 브라우저에서 작성 및 실행함으로 언제 어디서든 코딩을
+                        할 수 있습니다.
+                    </p>
+                    <h2 id="IDLE">IDLE 소개</h2>
+                    <p>
+                        Python IDLE 이란 Integrated Development and Learning Environment의 약자로,
+                        파이썬 1.5.2B1 이후 언어의 디폴트 구현과 함께 묶여온 파이썬을 위한 통합 개발 환경입니다.
+                        python IDLE은 GUI 툴로, 파이썬을 사용하기 쉽게 해줍니다.
+                    </p>
+                    <P>
+                        IDLE(아이들)은 단순한 IDE를 지향하며, 특히 교육 환경에서 초보자에게 적합합니다.
+                    </p>
+                    <P>
+                        1) 구문 강조, 자동 완성, 스마트 들여쓰기 등이 포함된 다중 창 텍스트 편집기<br>
+                        2) 구문 강조된 파이썬 쉘<br>
+                        3) stepping, breakpoint, call stack을 볼 수 있는 통합 디버거
+                    </p>
+                    <P>
+                        위 3개가 주요기능입니다.
+                    </p>
+                    <h2 id="Colab 'Hello Python'">Colab "Hello Python"</h2>
+                    <img src="./pictures/python_st_01/colab_01.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        Colaboratory에 접속하면 Colab 시작 페이지가 나오는데 여기서 왼쪽 상단에 보이는 파일을 눌러 
+                        '새 노트'를 눌러 새로운 페이지를 연다.
+                    </p>
+                    <img src="./pictures/python_st_01/colab_02.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        그러면 이러한 페이지가 나오는데 여기서 빨간 박스 안에 있는 셀에 print("Hello Python") 을 치고 
+                        왼쪽에 셀 실행 버튼을 누르면 아래와 같은 출력값이 나온다.
+                        <blockquote>
+                            <p>
+                                이때 왼쪽에 셀 실행 버튼을 누르지 않더라도 Shift + Enter를 누르면 버튼을 안누르고도 실행 시킬 수 
+                                있고 새로운 코드를 입력 가능한 셀이 나오게 된다.
+                            </p>
+                        </blockquote>
+                    </p><br>
+                    <img src="./pictures/python_st_01/colab_03.jpg" alt="not found" width="auto" height="auto">
+                    <h2 id="IDLE 'Hello Python'">IDLE "Hello Python"</h2>
+                    <p>이번에는 IDLE 설치부터 'Hello Python' 출력까지 해보겠습니다. 
+                        <a href="https://www.python.org/downloads/" target="_blank">
+                              IDLE Python
+                        </a>
+                        에 들어가면 아래와 같은 화면이 뜹니다. 여기서 빨간 박스 안에 있는 버튼을 눌러줍니다.
+                    </p>
+                    <img src="./pictures/python_st_01/idle_01.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        버튼을 눌러 다운로드를 받은 후 
+                    </p>
+                    <img src="./pictures/python_st_01/idle_02.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        이러한 화면이 뜨는데 밑에 보이는 체크 박스를 모두 체크하시고 'Install Now'를 눌러주세요. 
+                        그러면 설치가 시작됩니다.
+                    </p>
+                    <img src="./pictures/python_st_01/idle_03.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        설치가 끝났으면 이러한 화면이 뜨는데 'Close'를 눌러 종료해 주시면 됩니다.
+                    </p>
+                    <img src="./pictures/python_st_01/idle_04.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        화면 왼쪽 하단 윈도우 로고 옆에 보이는 돋보기에 IDLE이라고 치시면 이러한 화면이 나오는데, 
+                        실행시켜주시면 됩니다.
+                    </p>
+                    <img src="./pictures/python_st_01/idle_05.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        실행하시면 이러한 창이 뜨는데 저기에 print("Hello Python") 입력하시고 Enter를 눌러주시면 아래와 같은 결과가 나옵니다.
+                    </p>
+                    <img src="./pictures/python_st_01/idle_06.jpg" alt="not found" width="auto" height="auto">
+                    <p>
+                        이번 강의는 여기서 마치도록 하겠습니다.
+                    </p>
                     <script>
                       function attachComments() {
                         const el = document.querySelector('.markdown-section');
