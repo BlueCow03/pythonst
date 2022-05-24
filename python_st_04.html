@@ -79,27 +79,27 @@
                 </li>
                 <li class="chapter " data-level="1.2.4" data-path="basics/04-conditions.html">
                   <a href="https://bluecow03.github.io/pythonst/python_st_04.html">
-                    04. 조건문
+                    04. 배열
                   </a>
                 </li>
                 <li class="chapter " data-level="1.2.5" data-path="basics/05-function.html">
                   <a href="https://bluecow03.github.io/pythonst/python_st_05.html">
-                    05. 반복문
+                    05. 조건문
                   </a>
                 </li>
                 <li class="chapter expanded" data-level="1.2.6" data-path="basics/06-object.html">
                   <a href="https://bluecow03.github.io/pythonst/python_st_06.html">
-                    06. 함수
+                    06. 반복문
                   </a>
                 </li>
                 <li class="chapter " data-level="1.2.7" data-path="basics/07-array.html">
                   <a href="https://bluecow03.github.io/pythonst/python_st_07.html">
-                    07. 객체
+                    07. 함수
                   </a>
                 </li>
                 <li class="chapter " data-level="1.2.8" data-path="basics/08-loop.html">
                   <a href="https://bluecow03.github.io/pythonst/python_st_08.html">
-                    08. 배열
+                    08. 객체
                   </a>
                 </li>
                 <li class="chapter " data-level="1.2.9" data-path="basics/09-array-functions.html">
@@ -239,64 +239,45 @@
               <div id="book-search-results">
                 <div class="search-noresults">
                   <section class="normal markdown-section">
-                    <h1 id="조건문">조건문</h1>
+                    <h1 id="배열">배열</h1>
                     <p>
-                        이번에는 조건문에 대하여 알아보겠습니다.<br>
-                        조건문은 프로그래밍 언어에서 특정 조건이 만족됐을 때 안에 있는 코드를 실행하도록 하는 문법입니다.
+                        이번에는 배열에 대하여 알아보겠습니다.<br>
+                        배열은 여러개의 항목들을 저장하기 위해서 사용합니다. 식당에서의 메뉴판을 보시면 한 메뉴판에 
+                        많은 메뉴들이 있는 것을 생각하시면 이해하기 편하실 겁니다.<br>
+                        배열에는 리스트, 튜플, 세트, 딕셔너리가 있습니다.
                     </p>
-                    <h2 id="IF 문">IF 문</h2>
+                    <h2 id=LIST">LIST</h2>
                     <p>
-                        IF문은 '~일 때 ~을 해라'라는 문법입니다. 예를 들어, '라면을 좋아하면 "라면 좋아!"를 출력하라'라는 문장을 
-                        출력하게 만드는 문법입니다. 그러면 실습을 통해서 알아볼까요?
+                        LIST는 가장 기본적인 배열입니다. LIST로 선언 할 때에는 [] 안에 넣어주시면 됩니다.<br>
+                        그러면 실습을 통해서 알아보겠습니다
                     </p>
                     <img src="./pictures/python_st_04/st_04_01.JPG" alt="not found" width="auto" height="auto">
                     <p>
-                        실습을 통해서 볼 수 있듯이 '라면 좋아!'를 출력 되었습니다. <br>
-                        하지만, 여기서 like의 값을 '고기'로 바꾸면 어떻게 될까요?
+                        실습을 통해서 볼 수 있듯이 list라는 변수에 여러개의 값이 저장된 것을 확인하실 수 있습니다.
+                    </p>
+                    <h2 id="TUPLE">TUPLE</h2>
+                    <p>
+                        TUPLE(튜플)은 리스트와 유사하지만 변경 불가능한 시퀸스 자료형입니다. 하나의 변수에 여러 값 할당 가능합니다. 
+                        TUPLE은 ()을 사용하여 선언하시면 됩니다.<br>
+                        실습을 통해서 알아보겠습니다.
                     </p>
                     <img src="./pictures/python_st_04/st_04_02.JPG" alt="not found" width="auto" height="auto">
+                    <h2 id="SET">SET</h2>
                     <p>
-                        결과는 보시는 바와 같이 아무것도 출력이 되지 않습니다.<br>
-                        실습에서 알 수 있듯이 IF문은 조건이 만족 되었을 때에만 안에 있는 코드를 실행하는 문법입니다.
+                        SET(세트)는 데이터 중복을 허용하지 않고 순서가 없는 데이터 집합을 위한 구조로 인덱싱으로 값을 접근할 수 없습니다. 
+                        SET는 {}를 사용하여 선언하시면 됩니다.<br>
+                        실습을 통해서 알아보겠습니다.
                     </p>
                     <img src="./pictures/python_st_04/st_04_03.JPG" alt="not found" width="auto" height="auto">
+                    <h2 id="DICTIONARY">DICTIONARY</h2>
                     <p>
-                        문법으로는 이렇게 됩니다.
-                    </p>
-                    <p>
-                        그러면 다른 실습을 통해서 더욱 자세히 알아볼까요?
+                        DICTIONARY(딕셔너리)는 키(KEY)와 값(VALUE)의 쌍으로 구성되어 있고 순서가 없으며, 키를 통해 값을 가져옵니다. 
+                        동일한 키가 있을경우 덮어씁니다. DICTIONARY는 {KEY : VALUE}로 선언하셔야 합니다.<br>
+                        그러면 실습을 통해서 DICTIONARY에 대해서 알아보겠습니다.
                     </p>
                     <img src="./pictures/python_st_04/st_04_04.JPG" alt="not found" width="auto" height="auto">
                     <p>
-                        실습에서 x는 1과 같아서 1을 출력하고 x의 값을 2로 바꾼 다음 IF문을 빠져나와 2의 값을 출력 하였습니다.<br>
-                        그렇다면 x가 1이 아니면 어떻게 될까요?
-                    </p>
-                    <img src="./pictures/python_st_04/st_04_05.JPG" alt="not found" width="auto" height="auto">
-                    <p>
-                        위의 결과를 보듯이 '3'만 출력이 되는 것을 보실 수 있습니다.
-                    </p>
-                    <h2 id="IF-ELSE 문">IF-ELSE 문</h2>
-                    <p>
-                        IF-ELSE문은 "~하다면 ~하고, 그렇지 않다면 ~해라"라는 문법입니다.<br>
-                        실습을 통해 알아볼까요?
-                    </p>
-                    <img src="./pictures/python_st_04/st_04_06.JPG" alt="not found" width="auto" height="auto">
-                    <p>
-                        실습을 통해서 알 수 있듯이 x의 값은 2이므로 esle 안에 있는 "x의 값이 1이 아닙니다."라는 문장이 출력이 되었습니다.<br>
-                        이렇게 조건이 만족할 때와 만족하지 않을 때 서로 다른 코드를 실행해야 된다면 IF-ELSE 문을 사용 할 수 있습니다.
-                    </p>
-                    <h2 id="IF-ELIF 문">IF-ELIF 문</h2>
-                    <p>
-                        IF-ELIF 문은 여러 조건에 따른 작업을 해야 할 때 사용합니다.<br>
-                        실습을 통해서 알아보겠습니다.
-                    </p>
-                    <img src="./pictures/python_st_04/st_04_07.JPG" alt="not found" width="auto" height="auto">
-                    <p>
-                        결과를 보듯이 x의 값은 3이므로, 'x의 값은 1도 아니고 2도 아닌 3 입니다.'라는 문장이 출력되는 것을 볼 수 있습니다.
-                    </p>
-                    <p>
-                        이번에는 조건문에 대하여 알아보았습니다. 앞으로 프로그래밍을 하면서 조건문과 반복문은 정말 많이 
-                        쓰이기에 잘 기억해두시면 앞으로 프로그래밍을 할 때 많은 도움이 될 것입니다.
+                        이번에는 배열에 대하여 알아보았습니다. 배열은 여러개의 값을 저장할 때 유용하게 사용하실 수 있습니다.
                     </p>
                     <script>
                       function attachComments() {
@@ -337,195 +318,6 @@
         </a>
       </div>
       <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-          gitbook.page.hasChanged(
-            {"page":{
-              "title":"Python 입문",
-              "level":"1.1",
-              "depth":1,
-              "next":{
-                "title":"1장. Python 입문",
-                "level":"1.2",
-                "depth":1,
-                "path":"basics/README.md",
-                "ref":"./basics/README.md",
-                "articles":[{
-                  "title":"01. Hello JavaScript",
-                  "level":"1.2.1",
-                  "depth":2,
-                  "path":"basics/01-hello-javascript.md",
-                  "ref":"./basics/01-hello-javascript.md",
-                  "articles":[]
-                },
-                {
-                  "title":"02. 변수",
-                  "level":"1.2.2",
-                  "depth":2,
-                  "path":"basics/02-variables.md",
-                  "ref":"./basics/02-variables.md",
-                  "articles":[]
-                },
-                {
-                  "title":"03. 연산자",
-                  "level":"1.2.3",
-                  "depth":2,
-                  "path":"basics/03-operator.md",
-                  "ref":"./basics/03-operator.md",
-                  "articles":[]
-                },
-                {
-                  "title":"04. 조건문",
-                  "level":"1.2.4",
-                  "depth":2,
-                  "path":"basics/04-conditions.md",
-                  "ref":"./basics/04-conditions.md",
-                  "articles":[]
-                },
-                {
-                  "title":"05. 함수",
-                  "level":"1.2.5",
-                  "depth":2,
-                  "path":"basics/05-function.md",
-                  "ref":"./basics/05-function.md",
-                  "articles":[]
-                },
-                {
-                  "title":"06. 객체",
-                  "level":"1.2.6",
-                  "depth":2,
-                  "path":"basics/06-object.md",
-                  "ref":"./basics/06-object.md",
-                  "articles":[]
-                },
-                {
-                  "title":"07. 배열",
-                  "level":"1.2.7",
-                  "depth":2,
-                  "path":"basics/07-array.md",
-                  "ref":"./basics/07-array.md",
-                  "articles":[]
-                },
-                {
-                  "title":"08. 반복문",
-                  "level":"1.2.8",
-                  "depth":2,
-                  "path":"basics/08-loop.md",
-                  "ref":"./basics/08-loop.md",
-                  "articles":[]
-                },
-                {"title":"09. 배열",
-                "level":"1.2.9",
-                "depth":2,
-                "path":"basics/09-array-functions.md",
-                "ref":"./basics/09-array-functions.md",
-                "articles":[]
-              },
-              {
-                "title":"10. 클래스",
-                "level":"1.2.10",
-                "depth":2,
-                "path":"basics/10-prototype-class.md",
-                "ref":"./basics/10-prototype-class.md",
-                "articles":[]
-              }]
-            },
-            "dir":"ltr"},
-            "config":{
-              "gitbook":"*",
-              "theme":"default",
-              "variables":{},
-              "plugins":[
-                "collapsible-chapters",
-                "comment",
-                "hide-published-with",
-                "github",
-                "edit-link"
-              ],
-              "pluginsConfig":{
-                "github":{
-                  "url":"https://github.com/BlueCow03/pythonst"
-                },
-                "search":{},
-                "collapsible-chapters":{},
-                "lunr":{
-                  "maxIndexSize":1000000,
-                  "ignoreSpecialCharacters":false
-                },
-                "hide-published-with":{},
-                "fontsettings":{
-                  "theme":"white",
-                  "family":"sans",
-                  "size":2
-                },
-                "highlight":{},
-                "sharing":{
-                  "facebook":true,
-                  "twitter":true,
-                  "google":false,
-                  "weibo":false,
-                  "instapaper":false,
-                  "vk":false,
-                  "all":["facebook","google","twitter","weibo","instapaper"]
-                },
-                "edit-link":{
-                  "label":"수정 요청하기",
-                  "base":"https://github.com/BlueCow03/pythonst/edit/master"
-                },
-                "theme-default":{
-                  "styles":{
-                    "website":"styles/website.css",
-                    "pdf":"styles/pdf.css",
-                    "epub":"styles/epub.css",
-                    "mobi":"styles/mobi.css",
-                    "ebook":"styles/ebook.css",
-                    "print":"styles/print.css"
-                  },
-                  "showLevel":false
-                },
-                "comment":{}
-              },
-              "structure":{
-                "langs":"LANGS.md",
-                "readme":"README.md",
-                "glossary":"GLOSSARY.md",
-                "summary":"SUMMARY.md"
-              },
-              "pdf":{
-                "pageNumbers":true,
-                "fontSize":12,
-                "fontFamily":"Arial",
-                "paperSize":"a4",
-                "chapterMark":"pagebreak",
-                "pageBreaksBefore":"/",
-                "margin":{
-                  "right":62,
-                  "left":62,
-                  "top":56,
-                  "bottom":56}
-                },
-                "styles":{
-                  "website":"styles/website.css",
-                  "pdf":"styles/pdf.css",
-                  "epub":"styles/epub.css",
-                  "mobi":"styles/mobi.css",
-                  "ebook":"styles/ebook.css",
-                  "print":"styles/print.css"}
-                },
-                "file":{
-                  "path":"README.md",
-                  "mtime":"2019-05-18T02:44:31.008Z",
-                  "type":"markdown"
-                },
-                "gitbook":{
-                  "version":"3.2.3",
-                  "time":"2019-06-09T12:51:25.214Z"
-                },
-                "basePath":".",
-                "book":{"language":""}
-              }
-            );
-        });
       </script>
     </div>
     <script src="https://bluecow03.github.io/pythonst/python/gitbook.js"></script>
